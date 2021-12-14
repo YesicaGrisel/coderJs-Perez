@@ -61,6 +61,10 @@ const anime6 = new Anime(
 let animesList = [];
 animesList.push(anime1, anime2, anime3, anime4, anime5, anime6);
 
+const enJSON    = JSON.stringify(animesList);
+
+
+
 const anime01 = $("#anime1");
 const anime02 = $("#anime2");
 const anime03 = $("#anime3");
@@ -69,72 +73,30 @@ const anime05 = $("#anime5");
 const anime06 = $("#anime6");
 const lista = $("#listaDeAnimes");
 
+
+
 let animeVoted = [];
-anime01.click(function (event) {
-event.preventDefault();
-  $(".anime1").append(`<div>Se ha registrado su voto</div>`);
-});
-anime01.click(function saveToStorage(AnimeVoted, animeName) {
- 
-  localStorage.setItem("AnimeVoted", anime01.val());
-  animeVoted.push(anime01.val())
-
-
-});
-anime02.click(function (event) {
+var num = 5; 
+if (num > 0 ){
+  $(".clase").click (function (event) {
   event.preventDefault();
-  $(".anime2").append(`<div>Se ha registrado su voto</div>`);
-});
-anime02.click(function saveToStorage(AnimeVoted, animeName) {
- 
-  localStorage.setItem("AnimeVoted", anime02.val());
-  animeVoted.push(anime02.val())
+    $(this,"div").append(function(){ alert ("Se ha registrado su voto muchas gracias")
+    } ) ;
+  });
+  $(":input").click(function saveToStorage(AnimeVoted, animeName) {
+   
+    localStorage.setItem("AnimeVoted",  $(this).val());
 
-
-});
-
-anime03.click(function (event) {
-  event.preventDefault();
-  $(".anime3").append(`<div>Se ha registrado su voto</div>`);
-});
-anime03.click(function saveToStorage(AnimeVoted, animeName) {
- 
-  localStorage.setItem("AnimeVoted", anime03.val());
-  animeVoted.push(anime03.val())
-
-
-});
-anime04.click(function (event) {
-  event.preventDefault();
-  $(".anime4").append(`<div>Se ha registrado su voto</div>`);
-});
-anime04.click(function saveToStorage(AnimeVoted, animeName) {
- 
-  localStorage.setItem("AnimeVoted", anime04.val());
-  animeVoted.push(anime04.val())
-
-});
-
-
-anime05.click(function (event) {
-event.preventDefault();
-  $(".anime5").append(`<div>Se ha registrado su voto</div>`);
-});
-anime05.click(function saveToStorage(AnimeVoted, animeName) {
- 
-  localStorage.setItem("AnimeVoted", anime05.val());
-  animeVoted.push(anime05.val())
-
-
-});
-anime06.click(function (event) {
-  event.preventDefault();
-  $(".anime6").append(`<div>Se ha registrado su voto</div>`);
-});
-anime06.click(function saveToStorage(AnimeVoted, animeName) {
- 
-  localStorage.setItem("AnimeVoted", anime06.val());
-  animeVoted.push(anime06.val())
-
-
-});
+    animeVoted.push( $(this).val())
+  
+  });
+}
+$(".info").on('click', (e) =>{
+  $.getJSON ("animes.json", (respuesta, status)=>{
+    if(status ==="success"){
+      respuesta.forEach((anime)=>{
+       $(".container").append(`${ anime.nombre}-${anime.autor}-${ anime.año}-${ anime.genero}-${ anime.temporadas}-${ anime.emision}<br>`);
+    });
+      }
+    });
+  });

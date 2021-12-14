@@ -1,0 +1,55 @@
+[
+  {
+   
+  
+      "nombre": "Naruto",
+      "genero":"Shonen",
+      "autor":"Masashi Kishimoto",
+      "año":1999,
+      "temporadas":9,
+      "emision":"Finalizado"
+  },
+    
+   {
+  "nombre":  "Damon Slayer",
+  "genero": "shonen",
+  "autor": "Koyoharu Gotōgek",
+  "año":  2016,
+  "temporadas":  2,
+      "emision": "En emisión"
+   },
+   {
+   
+    "nombre": "Sakura Card Captor",
+    "genero":"shojo",
+    "autor":"mangaka CLAMP",
+    "año":1996,
+      "temporadas":  3,
+      "emision": "finalizado"
+   },
+   {
+    "nombre":  "Sailor moon",
+    "genero":"shojo",
+    "autor": "Naoko Takeuchi",
+    "año": 1991,
+    "temporadas":" 5",
+    "emision":"finalizado"
+   },
+    {
+    "nombre":  "Black Clover",
+    "genero": "shonen",
+    "autor": " Yūki Tabata",
+    "año": 2015,
+      "temporadas": 3,
+      "emision": "En emisión"
+    },
+{
+    "nombre": "Erased",
+    "genero":"ciencia ficción",
+    "autor": "Kei Sanbe",
+    "año":2012,
+      "temporadas": 1,
+      "emision": " Finalizado"
+
+  }
+]

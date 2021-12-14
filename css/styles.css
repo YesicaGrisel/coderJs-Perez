@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-size: 1.6rem; }
+
+
+/*HEADER*/
+.header {
+  background-color: white;
+  height: 120px; }
+
+.header__name {
+  color: #eb9bb3;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 3rem; }
+
+.logo__style {
+  padding: 2px;
+  height: 120px;
+  width: 70px; }
+
+.nav__style {
+  color: black;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8rem;
+  padding: 0.5rem; }
+
+.button__name {
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400r;
+  margin-bottom: 0rem;
+  font-size: 1.5rem; }
+/*reseñas*/
+.summary__title {
+  text-align: justify;
+  font-family: "Josefin Sans", sans-serif;
+  color: purple;
+  font-weight: 400;
+  font-size: 1.1rem; }
+
+.summary__text {
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  line-height: 1rem; }
+
+.summary__media {
+  height: 330px;
+  width: 230px;
+  margin: 1rem; }
+
+.summary__media--wrapper:hover .summary__media {
+  transition: transform 1s;
+  transform: scale(1.1); }
+  .title {
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 1.6rem; }

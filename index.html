@@ -4,63 +4,204 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="css/styles.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Clase1</title>
   </head>
   <body class="fondo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand header__name" href="/index.html"><img class="logo__style img-fluid logo" src="https://cdn-icons-png.flaticon.com/512/774/774929.png" alt="Logo de la página">OtakunU</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active nav__style" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__style" href="#">Información</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__style" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__style" href="#">Reseñas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__style" href="#">Registrate</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 nav__style btn-sm" type="search" placeholder="Search " aria-label="Search">
+            <button class="btn btn-outline-secondary btn-sm" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <main>
-      <h1>Ranking</h1>
-      <ul id="listaDeAnimes">
-        <li class="anime1 m-3">
-          Naruto
-          <button
-            type="button"
-            id="anime1"
-            value="Naruto"
-            class="btn btn-secondary"
-          >
-            Votar
-          </button>
-        </li>
-        <li class="anime2 m-3">
-          Damon Slayer
-          <button type="button" id="anime2" value="Damon slayer" class="btn btn-secondary">
-            Votar
-          </button>
-        </li>
-
-        <li class="anime3 m-3">
-          Sakura Card Captor
-          <button type="button" id="anime3" value="Sakura Card Captor" class="btn btn-secondary">
-            Votar
-          </button>
-        </li>
-        <li class="anime4 m-3">
-          Sailor Moon
-          <button type="button" id="anime4" value="Sailor moon" class="btn btn-secondary">
-            Votar
-          </button>
-        </li>
-        <li class="anime5 m-3">
-          Black Clover
-          <button type="button" id="anime5" value="Black Clover" class="btn btn-secondary">
-            Votar
-          </button>
-        </li>
-        <li class="anime6 m-3">
-          Erased
-          <button type="button" id="anime6" value="Erased" class="btn btn-secondary">
-            Votar
-          </button>
-        </li>
-      </ul>
+      <h1 class="title">Ranking</h1>
+      <div class="container mt-5">
+        <div class="row w-100 ">
+    <article class="summary__article">
+      <div class="container">
+        <div class="row align-items-center  ">
+      
+      <div class="summary__media--wrapper  d-flex justify-content-center text-center col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-4  ">
+    
+        <img class="summary__media " src="https://mangastore.pl/images/oferta/manga/studiojg/erased_6.jpg" alt="imagen de la portada de erased ">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
+      <h3 class="summary__title ">Erased</h3>
+      <p class="summary__text ">
+        Satoru Fujinuma es un autor de manga frustrado que trabaja como repartidor
+        de pizzas para llegar a final de mes. Lo que no sabe nadie es que posee un
+        don excepcional: cada vez que tiene lugar alguna tragedia cerca de él es
+        proyectado unos minutos hacia atrás en el tiempo para tratar de impedirla.
+        Precisamente uno de estos episodios hace aflorar los recuerdos reprimidos
+        de su infancia traumática, lo que acaba teniendo consecuencias demoledoras
+        y trágicas en su presente. Una vez más, sufre una de sus Regresiones, solo
+        que esta vez lo lleva hasta el año 1988, justo antes de que su compañera
+        de clase Kayo Hinazuki se convirtiera en la primera víctima de un
+        secuestrador en serie. ¿Será el Satoru de 10 años capaz de reparar el
+        pasado para cambiar el presente?
+    
+      </p>
+      <div class="anime6 m-3">
+        
+        <button type="button" id="anime6" value="Erased" class=" clase btn btn-secondary">
+          Votar
+        </button>
+        <button type="button" id= "inform"value="Erased" class=" info btn btn-secondary">
+          información
+        </button>   
+      
+      </div>
+    </div>
+      </div>
+    </div>
+        <div class="container">
+          <div class="row align-items-center">
+      <div class="summary__media--wrapper  d-flex justify-content-center text-center col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
+        <img class="summary__media" src="https://i.pinimg.com/564x/59/b1/82/59b1820af221b39cc6d4d1d79a966d0f.jpg" alt="dibujo de los personajes">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
+      <h4 class="summary__title">Damon Slayer</h4>
+      <p class="summary__text">
+        Ambientada en la era Taisho, la historia se centra en Tanjirō Kamado, un joven inteligente y de buen corazón que vive con su familia en las montañas. Sin embargo, toda su vida cotidiana cambia cuando en uno de estos viajes, regresa a casa solo para descubrir que su familia ha sido atacada y asesinada por un demonio, en la cual Tanjirō solo encuentra aun con vida a su hermana Nezuko como la única supervivientes del incidente, inesperadamente esta se despierta ya transformada en una demonio y trata de atacarlo, pero esta todavía aun guarda signos de emoción y pensamiento humanos. Después de un encuentro con un poderoso espadachín y perteneciente al gremio de asesino de demonios conocidos como Demon Slayers, recluta Tanjiro y lo envía con su antiguo maestro Sakonji Urokodaki, un antiguo miembro del Cuerpo de Demon Slayers, para que este le enseñe a convertirse también en un asesino de demonios y comienza su búsqueda para ayudar a su hermana a convertirse nuevamente en humana y vengar la muerte del resto de su familia.
+      </p>
+      <div class="anime2 m-3">
+        
+        <button type="button" id="anime2" value="Damon slayer" class=" clase btn btn-secondary">
+          Votar
+        </button>
+        
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+      <div class="summary__media--wrapper  d-flex justify-content-center text-center col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
+        <img class="summary__media" src="https://i.pinimg.com/564x/d1/e7/a7/d1e7a74cb735bb49fc5b27c56fde3bea.jpg" alt="dibujo de los personajes del anime Naruto">
+      </div>
+      <div class="  col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
+      <h5 class="summary__title">Naruto</h5>
+      <p class="summary__text">
+        Naruto Uzumaki es un ninja adolescente que tiene encerrado en su interior al Kyubi (Zorro Demonio de Nueve Colas). Doce años antes del inicio de la serie este demonio atacó a la Aldea Oculta de la Hoja (Konoha), matando a muchas personas, como consecuencia, el líder de la aldea, el Cuarto Hokage, Minato Namikase, sacrificó su vida utlizando una técnica llamada Shiki Fujin (sello de la muerte demoníaca) para sellarlo dentro de Naruto cuando era un recién nacido, con lo que esperaba detener la masacre. Por ello Naruto fue víctima de maltratos por quienes lo consideraban el propio Kyubi. Como solución, el Tercer Hokage (quien tuvo que reasumir el mando luego del sacrificio del Cuarto Hokage) publicó un decreto que prohibía a cualquiera hablar de algo relacionado con el ataque del Kyubi, y quien lo hiciera sería severamente castigado.
+      </p>
+      <div class="anime1 m-3">
+     
+        <button
+          type="button"
+          id="anime1"
+          value="Naruto"
+          class="btn btn-secondary  clase "
+        >
+          Votar
+       
+        </button>
+  
+      </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="container">
+      <div class="row align-items-center">
+    <div class="summary__media--wrapper  d-flex justify-content-center text-center col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
+    <img class="summary__media" src="https://th.bing.com/th/id/OIP.Ze_D8CcYfwRFbQw1pM81PQHaKe?pid=ImgDet&amp;rs=1" alt="dibujo de los personajes">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
+    <h4 class="summary__title">Black Clover</h4>
+    <p class="summary__text">
+      Cuando la humanidad estaba a punto de caer por el Demonio antiguo, un único mago la salvó y lo derrotó. Más tarde ese mago se convirtió en una leyenda y fue nombrado Rey mago. Después de ese suceso, el Reino del Trébol gozó de paz a través de generaciones de reyes magos y nueve órdenes mágicas subordinadas. Asta y Yuno son huérfanos que fueron criados juntos desde su nacimiento después de ser abandonados en un orfanato de la iglesia de Hage, ubicada en la zona olvidada del Reino del Trébol al mismo tiempo. En un mundo donde todos tienen Poder Mágico, cuya habilidad de controlarlo es de manera natural: Asta es la única persona nacida sin magia, lo que lo lleva a entrenar físicamente como compensación. Por el contrario, Yuno nació como un prodigio con un inmenso poder mágico y el talento para controlarlo. 
+    </p>
+    <div class="anime5 m-3">
+   
+      <button type="button" id="anime5" value="Black Clover" class="btn btn-secondary clase ">
+        Votar
+      </button>
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="container">
+      <div class="row align-items-center">
+    <div class="summary__media--wrapper   d-flex justify-content-center text-center col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
+    <img class="summary__media" src="https://i.pinimg.com/564x/a8/82/dc/a882dc8426a9fb6ed8d78c4b2d6b5492.jpg" alt="dibujo de los personajes">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
+    <h4 class="summary__title">Sailor Moon</h4>
+    <p class="summary__text">
+      Serena es una guerrera de la Luna, destinada a luchar por el amor y la justicia. Y no es la única, junto con las Sailor Scouts al lado de ellas y de Tuxedo Mask deberán vencer a la Reina Beril del Negaverso. La historia de Sailor Moon parte de mil años en el pasado, cuando existía en la luna un imperio llamado "El Milenio de Plata", un paraíso gobernado por la Reina Serenity donde su pueblo vivía en completa armonía hasta que llegaron las fuerzas de una dimensión maligna llamada el Negaverso, comandado por la malvada Reina Beryl; ella y sus guerreros decidieron atacar y gobernar el Imperio de la Luna, pero la Reina Serenity logro detenerlos y devolverlos a su dimensión, cerrando le entrada de su espacio a la nuestra; pero esto fue sólo posible sacrificándose ella misma, y mandando a todo su escuadrón de guardianes al futuro para que fueran reencarnadas en la tierra.
+    </p>
+    <div class="anime4 m-3">
+     
+      <button type="button" id="anime4" value="Sailor moon" class="btn btn-secondary  clase">
+        Votar
+      </button>
+    </div>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
+      <div class="row align-items-center">
+    <div class="summary__media--wrapper   d-flex justify-content-center text-center col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
+    <img class="summary__media" src="https://i.pinimg.com/564x/ef/c3/a9/efc3a93f65b56710a8f9e84c8780ae99.jpg" alt="dibujo de los personajes">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
+    <h4 class="summary__title">Sakura Card Captor</h4>
+    <p class="summary__text">
+      La obra narra las aventuras de Sakura Kinomoto, una pequeña niña de diez años que accidentalmente libera un conjunto de cartas que se encontraban dentro de un libro, el cual había descubierto en la biblioteca de su padre. Tras esto, Kero —el guardián del libro— emerge y, al enterarse de que la mayoría de las cartas conocidas como las «cartas Clow» se habían esparcido por todas partes, le dice a Sakura que ahora es su responsabilidad convertirse en una «cardcaptor» e ir en busca de ellas para evitar que ocurra una «catástrofe» en el mundo. Por lo tanto, Sakura adquiere habilidades especiales para así enfrentarse a los poderes mágicos de cada carta y lograr capturarlas y sellarlas.  Kero se vuelve el guía y mentor de Sakura durante la búsqueda, mientras que su mejor amiga, Tomoyo Daidōji, le confecciona gran variedades de trajes, ya que según ella «debe llevar una ropa especial para una ocasión especial». Además, Tomoyo suele hacer grabaciones de las batallas de Sakura.
+     
+    </p>
+    <div class="anime3 m-3">
+    
+      <button type="button" id="anime3" value="Sakura Card Captor" class="btn btn-secondary clase">
+        Votar
+      </button>
+    </div>
+    </div>
+    </div>
+    </div>  
+    </article>
+    
+        
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
