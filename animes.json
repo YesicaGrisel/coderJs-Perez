@@ -2,54 +2,54 @@
   {
    
   
-      "nombre": "Naruto",
-      "genero":"Shonen",
-      "autor":"Masashi Kishimoto",
-      "año":1999,
-      "temporadas":9,
-      "emision":"Finalizado"
+      "nombre": "Nombre: Naruto",
+      "genero":"Genero : Shonen",
+      "autor":"Autor : Masashi Kishimoto",
+      "año": "Año : 1999",
+      "temporadas": "Temporadas : 9",
+      "emision":" Emision : Finalizado"
   },
     
    {
-  "nombre":  "Damon Slayer",
-  "genero": "shonen",
-  "autor": "Koyoharu Gotōgek",
-  "año":  2016,
-  "temporadas":  2,
-      "emision": "En emisión"
+  "nombre":  "Nombre: Damon Slayer",
+  "genero": "Genero :shonen",
+  "autor": "Autor : Koyoharu Gotōgek",
+  "año":  "Año :2016",
+  "temporadas": "Temporadas : 2",
+      "emision": " Emision : En emisión"
    },
    {
    
-    "nombre": "Sakura Card Captor",
-    "genero":"shojo",
-    "autor":"mangaka CLAMP",
-    "año":1996,
-      "temporadas":  3,
-      "emision": "finalizado"
+    "nombre": "Nombre:Sakura Card Captor",
+    "genero":"Genero :shojo",
+    "autor":"Autor : mangaka CLAMP",
+    "año": "Año :1996",
+      "temporadas":  "Temporadas :3",
+      "emision": "Emision : finalizado"
    },
    {
-    "nombre":  "Sailor moon",
-    "genero":"shojo",
-    "autor": "Naoko Takeuchi",
-    "año": 1991,
-    "temporadas":" 5",
-    "emision":"finalizado"
+    "nombre":  "Nombre:Sailor moon",
+    "genero":"Genero :shojo",
+    "autor": "Autor : Naoko Takeuchi",
+    "año": "Año :1991",
+    "temporadas":"Temporadas: 5",
+    "emision":"Emision : finalizado"
    },
     {
-    "nombre":  "Black Clover",
-    "genero": "shonen",
-    "autor": " Yūki Tabata",
-    "año": 2015,
-      "temporadas": 3,
-      "emision": "En emisión"
+    "nombre":  "Nombre:Black Clover",
+    "genero": "Genero : shonen",
+    "autor": " Autor :Yūki Tabata",
+    "año":"Año : 2015",
+      "temporadas": "Temporadas :3",
+      "emision": "Emision : En emisión"
     },
 {
-    "nombre": "Erased",
-    "genero":"ciencia ficción",
-    "autor": "Kei Sanbe",
-    "año":2012,
-      "temporadas": 1,
-      "emision": " Finalizado"
+    "nombre": "Nombre:Erased",
+    "genero":"Genero : ciencia ficción",
+    "autor": "Autor :Kei Sanbe",
+    "año":"Año :2012",
+      "temporadas": "Temporadas :1",
+      "emision": "Emision :  Finalizado"
 
   }
 ]

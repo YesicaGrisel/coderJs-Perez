@@ -32,16 +32,12 @@
               <a class="nav-link active nav__style" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__style" href="#">Información</a>
-            </li>
+              <a class="nav-link nav__style" href="./index.html"
+                >Ranking</a
+              >
+       </li>
             <li class="nav-item">
-              <a class="nav-link nav__style" href="#">Noticias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav__style" href="#">Reseñas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav__style" href="#">Registrate</a>
+              <a class="nav-link nav__style" href="./registro.html">Registrate</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -81,15 +77,12 @@
         pasado para cambiar el presente?
     
       </p>
-      <div class="anime6 m-3">
+      <div class="anime m-3">
         
         <button type="button" id="anime6" value="Erased" class=" clase btn btn-secondary">
           Votar
         </button>
-        <button type="button" id= "inform"value="Erased" class=" info btn btn-secondary">
-          información
-        </button>   
-      
+       
       </div>
     </div>
       </div>
@@ -104,7 +97,7 @@
       <p class="summary__text">
         Ambientada en la era Taisho, la historia se centra en Tanjirō Kamado, un joven inteligente y de buen corazón que vive con su familia en las montañas. Sin embargo, toda su vida cotidiana cambia cuando en uno de estos viajes, regresa a casa solo para descubrir que su familia ha sido atacada y asesinada por un demonio, en la cual Tanjirō solo encuentra aun con vida a su hermana Nezuko como la única supervivientes del incidente, inesperadamente esta se despierta ya transformada en una demonio y trata de atacarlo, pero esta todavía aun guarda signos de emoción y pensamiento humanos. Después de un encuentro con un poderoso espadachín y perteneciente al gremio de asesino de demonios conocidos como Demon Slayers, recluta Tanjiro y lo envía con su antiguo maestro Sakonji Urokodaki, un antiguo miembro del Cuerpo de Demon Slayers, para que este le enseñe a convertirse también en un asesino de demonios y comienza su búsqueda para ayudar a su hermana a convertirse nuevamente en humana y vengar la muerte del resto de su familia.
       </p>
-      <div class="anime2 m-3">
+      <div class="anime m-3">
         
         <button type="button" id="anime2" value="Damon slayer" class=" clase btn btn-secondary">
           Votar
@@ -124,7 +117,7 @@
       <p class="summary__text">
         Naruto Uzumaki es un ninja adolescente que tiene encerrado en su interior al Kyubi (Zorro Demonio de Nueve Colas). Doce años antes del inicio de la serie este demonio atacó a la Aldea Oculta de la Hoja (Konoha), matando a muchas personas, como consecuencia, el líder de la aldea, el Cuarto Hokage, Minato Namikase, sacrificó su vida utlizando una técnica llamada Shiki Fujin (sello de la muerte demoníaca) para sellarlo dentro de Naruto cuando era un recién nacido, con lo que esperaba detener la masacre. Por ello Naruto fue víctima de maltratos por quienes lo consideraban el propio Kyubi. Como solución, el Tercer Hokage (quien tuvo que reasumir el mando luego del sacrificio del Cuarto Hokage) publicó un decreto que prohibía a cualquiera hablar de algo relacionado con el ataque del Kyubi, y quien lo hiciera sería severamente castigado.
       </p>
-      <div class="anime1 m-3">
+      <div class="anime m-3">
      
         <button
           type="button"
@@ -200,9 +193,46 @@
     </div>
     </div>  
     </article>
-    
-        
+    <p class=" informacion"> Si desea obtener información más especifica sobre la cantidad de temporadas, autor, año de emisión o caracteristicas particulares les invitamos a presionar el botón "+ información" para que se desplige una lista más detallada  </p>
+    <div class="inform">
+
+      <button type="button" id= "inform"value="inform" class=" info btn btn-secondary">
+       
+       + información
+    </button>   
+  </div>  
+
     </main>
+     <!--Footer-->
+     <footer class="footer">
+      <div class="pt-4 d-flex justify-content-center footer__style w-100">
+        <h6>Redes sociales</h6>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+          ><img
+            class="contenido-footer-redes ms-2 me-1"
+            src="https://cdn-icons-png.flaticon.com/512/747/747393.png"
+            target="_blank"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+          ><img
+            class="contenido-footer-redes me-1"
+            src="https://cdn-icons-png.flaticon.com/512/1051/1051360.png"
+            alt="Facebook"
+        /></a>
+        <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener"
+          ><img
+            class="contenido-footer-redes me-1"
+            src="https://cdn-icons-png.flaticon.com/512/466/466963.png"
+            alt="Twitter"
+        /></a>
+      </div>
+      <div class="footer__style footer-copyright text-center contenido-footer">
+        © 2021 Copyright: Yesica Perez - Coderhouse
+      </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -210,5 +240,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="javascript/main.js"></script>
+   
   </body>
 </html>

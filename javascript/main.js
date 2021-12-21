@@ -80,10 +80,10 @@ var num = 5;
 if (num > 0 ){
   $(".clase").click (function (event) {
   event.preventDefault();
-    $(this,"div").append(function(){ alert ("Se ha registrado su voto muchas gracias")
+    $(this,"div").append(function(){ swal ("Se ha registrado su voto", "Muchas gracias por participar<3", "success")
     } ) ;
   });
-  $(":input").click(function saveToStorage(AnimeVoted, animeName) {
+  $(".clase").click(function saveToStorage(AnimeVoted, animeName) {
    
     localStorage.setItem("AnimeVoted",  $(this).val());
 
@@ -91,12 +91,37 @@ if (num > 0 ){
   
   });
 }
-$(".info").on('click', (e) =>{
+$("#inform").on('click', (e) =>{
   $.getJSON ("animes.json", (respuesta, status)=>{
     if(status ==="success"){
       respuesta.forEach((anime)=>{
-       $(".container").append(`${ anime.nombre}-${anime.autor}-${ anime.año}-${ anime.genero}-${ anime.temporadas}-${ anime.emision}<br>`);
+        
+       $(".inform").append(` <br>${ anime.nombre}<br> ${anime.autor}<br>${ anime.año}<br>${ anime.genero}<br>${ anime.temporadas}<br>${ anime.emision}<hr>`);
     });
       }
     });
   });
+
+    $("#nombre").keyup(function saveToStorage(usuario, nombre) {
+     
+      localStorage.setItem("usuario",  $(this).val());
+        var value = $(this).val();
+      
+
+    
+    }).keyup();
+
+    $("select#idioma").change(function() {
+      localStorage.setItem("idioma",  $(this).val());
+ });
+ $("#email").keyup(function saveToStorage(correo, email) {
+     
+  localStorage.setItem("correo",  $(this).val());
+    var value = $(this).val();
+   
+
+
+}).keyup();
+$("input[name='genero']").change(function() {
+  localStorage.setItem("genero",  $(this).val());
+});

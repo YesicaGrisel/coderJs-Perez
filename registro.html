@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrate</title>
+    <!--SEO-->
+    <meta
+      name="description"
+      content=" Noticias es una de las secciones de OtakunU en donde los usuarios vas a poder registrarse o iniciar sesión"
+    />
+    <meta
+      name="keywords"
+      content="animes, mangas, entretenimiento, actualidad, noticias, presentación, contenido, informacion, iniciar sesión, resgistrate, usuarios"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!--Body-->
+  <body>
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand header__name" href="/index.html"
+          ><img
+            class="logo__style img-fluid logo"
+            src="https://cdn-icons-png.flaticon.com/512/774/774929.png"
+            alt="Logo de la página"
+          />OtakunU</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav__style"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__style" href="./index.html"
+                >Ranking</a
+              >
+       </li>
+       <li class="nav-item">
+        <a class="nav-link nav__style" href="./registro.html">Registrate</a>
+      </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2 nav__style btn-sm"
+              type="search"
+              placeholder="Search "
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary btn-sm" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Formulario de registro-->
+    <main>
+      <form class="form container" id="form-confirm">
+        <div class="row form__style p-4 m-3">
+          <div
+            class="
+              col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-6
+              p-1
+              d-flex
+              flex-column
+              justify-content-center
+            "
+          >
+            <div class="text-center">
+              <label class="text-center" for="nombre">Nombre </label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre "
+                minlength="4"
+                maxlength="18"
+                size="16"
+                required
+                placeholder="Nombre"
+              />
+            </div>
+
+            <div class="pt-4 text-center">
+              <label for="password ">Contraseña</label>
+              <input
+                placeholder="Contraseña"
+                required
+                type="password"
+                id="password"
+                name="password"
+                minlength="4"
+                maxlength="18"
+                size="16"
+              />
+            </div>
+            <div class="pt-4 pb-5 text-center">
+              <label for="idioma">Idioma</label>
+              <select class="form__style--buttons" name="idioma" id="idioma">
+                <option value="español">Español</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="portuges">Portugés</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6 p-1">
+            <div class="text-center">
+              <label for="email">Correo electronico</label>
+              <input
+                placeholder="Email"
+                type="email"
+                required
+                id="email"
+                name="email"
+                minlength="4"
+                maxlength="18"
+                size="16"
+              />
+            </div>
+            <div class="p-2 ">
+              <p class="form__style--title pt-3">Seleccione una opción</p>
+
+              <input type="radio" id="femenino" name="genero" value="femenino" />
+              <label for="femenino">femenino</label>
+              <br />
+              <input type="radio" id="masculino" name="genero" value="masculino" />
+              <label for="masculino">Masculino</label>
+              <br />
+              <input type="radio" id="otro" name="genero" value="otro" />
+              <label for="otro">Otro</label>
+            </div>
+          </div>
+          <div class="p-2">
+            Acepta términos y condiciones
+            <input type="checkbox" required  id="tyc" name="acepta" value="si" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center p-3">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Aceptar
+          </button>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header p-2 m-2">
+                <h5 class="modal-title text-center" id="exampleModalLabel">
+                  Se registro con exito!!!!
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-0 text-center">
+                <img
+                  src="https://data.whicdn.com/images/305893641/original.gif"
+                  width="230px"
+                  height="180px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="pt-4 d-flex justify-content-center footer__style w-100">
+        <h6>Redes sociales</h6>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+          ><img
+            class="contenido-footer-redes ms-2 me-1"
+            src="https://cdn-icons-png.flaticon.com/512/747/747393.png"
+            target="_blank"
+            alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+          ><img
+            class="contenido-footer-redes me-1"
+            src="https://cdn-icons-png.flaticon.com/512/1051/1051360.png"
+            alt="Facebook"
+        /></a>
+        <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener"
+          ><img
+            class="contenido-footer-redes me-1"
+            src="https://cdn-icons-png.flaticon.com/512/466/466963.png"
+            alt="Twitter"
+        /></a>
+      </div>
+      <div class="footer__style footer-copyright text-center contenido-footer">
+        © 2021 Copyright: Yesica Perez - Coderhouse
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
